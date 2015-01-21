@@ -120,6 +120,7 @@ class SpoonPlugin implements Plugin<Project> {
         devices = config.devices
         allDevices = !config.devices
         noAnimations = config.noAnimations
+        noScreenshots = config.noScreenshots
         failIfNoDeviceConnected = config.failIfNoDeviceConnected
 
         testSize = SpoonRunTask.TEST_SIZE_ALL

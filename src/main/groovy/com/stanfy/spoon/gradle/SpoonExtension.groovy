@@ -26,6 +26,9 @@ class SpoonExtension {
   /** Whether or not animations are enabled, useful for slow machines or projects with many screenshots */
   boolean noAnimations
 
+  /** Whether or not screenshots are enabled, useful for slow machines or projects with many screenshots */
+  boolean noScreenshots
+
   /** Output directory for the spoon report files. If empty, the default dir will be used */
   File baseOutputDir
 

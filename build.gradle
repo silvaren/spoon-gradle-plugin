@@ -37,7 +37,7 @@ dependencies {
   compile gradleApi()
   compile localGroovy()
 
-  compile 'com.squareup.spoon:spoon-runner:1.1.2'
+  compile 'com.squareup.spoon:spoon-runner:1.1.3-NOSCREENSHOTS'
 
   compile 'com.android.tools.build:gradle:0.14.1'
 

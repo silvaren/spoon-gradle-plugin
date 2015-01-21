@@ -50,6 +50,9 @@ class SpoonRunTask extends DefaultTask implements VerificationTask {
 
   /** Whether or not animations are enabled */
   boolean noAnimations
+
+  /** Whether or not screenshots are enabled */
+  boolean noScreenshots
   
   /** Size of test to be run ('small' / 'medium' / 'large'). */
   @Input
@@ -93,6 +96,8 @@ class SpoonRunTask extends DefaultTask implements VerificationTask {
 
     LOG.debug("No animations: $noAnimations")
 
+    LOG.debug("No screenshots: $noScreenshots")
+
     LOG.debug("Test size: $testSize")
 
     String cp = getClasspath()
@@ -110,6 +115,7 @@ class SpoonRunTask extends DefaultTask implements VerificationTask {
         .setAndroidSdk(project.android.sdkDirectory)
         .setClasspath(cp)
         .setNoAnimations(noAnimations)
+        .setNoScreenshots(noScreenshots)
 
     if (testSize != TEST_SIZE_ALL) {
       // Will throw exception with informative message if provided size is illegal
